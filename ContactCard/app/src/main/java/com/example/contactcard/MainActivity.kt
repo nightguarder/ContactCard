@@ -139,6 +139,7 @@ fun ContactCard(appName: String,profileIcon: Int) {
        )
         Spacer(modifier = Modifier.height(16.dp))
         DrawProfileImg(description = "Profile icon", img = profileIcon)
+        Text(text = "Full Stack Developer", style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Medium)
     }
 }
 //Contact list layout (Section 2)
