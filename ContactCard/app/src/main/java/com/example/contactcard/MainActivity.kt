@@ -32,7 +32,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.rememberVectorPainter
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -68,16 +67,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun Greeting(appname: String) {
-    Row(modifier = Modifier .padding(5.dp), horizontalArrangement = Arrangement.Center) {
-        Text(
-            text = appname,
-            fontSize= 50 .sp,
-            fontWeight = FontWeight.Bold
-        )
-    }
-}
+
 @Composable
 fun DrawProfileImg(description: String,img:Int){
     val image = painterResource(id = img)
