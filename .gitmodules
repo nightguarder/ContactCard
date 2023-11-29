@@ -1,0 +1,3 @@
+[submodule "LearningCards"]
+	path = LearningCards
+	url = git@github.com:nightguarder/LearningCards.git
